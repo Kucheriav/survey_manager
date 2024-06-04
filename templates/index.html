@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ответы на вопросы</title>
+</head>
+<body>
+    <h1>Ответьте на вопросы:</h1>
+    <form method="post">
+        {% for question in questions %}
+            <p>{{ question }}</p>
+            <input type="text" name="answer_{{ loop.index }}">
+        {% endfor %}
+        <button type="submit">Отправить ответы</button>
+    </form>
+</body>
+</html>
