@@ -1,14 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
+from config import Config
 import re
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'your_secret_key_here'
-app.config['MAIL_SERVER'] = 'smtp.yandex.ru'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'kucheriav@example.com'
-app.config['MAIL_PASSWORD'] = 'your_email_password'
+app.config.from_object(Config)
 
 mail = Mail(app)
 
@@ -29,7 +25,7 @@ def process_registration():
         return "Некорректный адрес электронной почты. Пожалуйста, вернитесь и попробуйте снова."
 
     # Отправка письма с подтверждением
-    msg = Message('Подтверждение регистрации', sender='your_email@example.com', recipients=[email])
+    msg = Message('Подтверждение регистрации', sender=app.config['MAIL_USERNAME'], recipients=[email])
     msg.body = f'Здравствуйте, {username}! Для завершения регистрации перейдите по ссылке: http://127.0.0.1:5000/confirm/{email}'
     mail.send(msg)
 
