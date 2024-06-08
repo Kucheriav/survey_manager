@@ -1,10 +1,9 @@
-from models import *
+from .models import *
 from sqlalchemy_utils import database_exists, create_database, drop_database
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from log_writer import setup_logger
 import inspect
-import psycopg2
 from config_reader import read_config
 
 

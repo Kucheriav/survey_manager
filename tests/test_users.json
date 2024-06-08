@@ -1,0 +1,79 @@
+[
+    {
+        "login": "user1",
+        "name": "mhsNnPkV",
+        "surname": "RcLYELGSqa",
+        "password": "op6tuC3uRQ",
+        "email": "user1@example.com",
+        "reg_date": "2022-01-01 00:00:00",
+        "last_visit": "2022-01-02 00:00:00",
+        "is_teacher": false,
+        "is_admin": false
+    },
+    {
+        "login": "user2",
+        "name": "gqkuFeIE",
+        "surname": "VAzyPjtnwv",
+        "password": "NXMCsX012t",
+        "email": "user2@example.com",
+        "reg_date": "2022-01-01 00:00:00",
+        "last_visit": "2022-01-02 00:00:00",
+        "is_teacher": false,
+        "is_admin": false
+    },
+    {
+        "login": "user3",
+        "name": "uASgUlOC",
+        "surname": "YeiAKCIxlh",
+        "password": "ZsALRVBWLS",
+        "email": "user3@example.com",
+        "reg_date": "2022-01-01 00:00:00",
+        "last_visit": "2022-01-02 00:00:00",
+        "is_teacher": false,
+        "is_admin": false
+    },
+    {
+        "login": "teacher1",
+        "name": "BOtnQfdA",
+        "surname": "CtpVkJsJWY",
+        "password": "ZAQT18yxKp",
+        "email": "user4@example.com",
+        "reg_date": "2022-01-01 00:00:00",
+        "last_visit": "2022-01-02 00:00:00",
+        "is_teacher": true,
+        "is_admin": false
+    },
+    {
+        "login": "teacher2",
+        "name": "qFAoIoKM",
+        "surname": "iqiYyatHPk",
+        "password": "SaaWi5RlYE",
+        "email": "user5@example.com",
+        "reg_date": "2022-01-01 00:00:00",
+        "last_visit": "2022-01-02 00:00:00",
+        "is_teacher": true,
+        "is_admin": false
+    },
+    {
+        "login": "teacher3",
+        "name": "iElKFsse",
+        "surname": "htdNGTiROY",
+        "password": "feMrinLTSm",
+        "email": "user6@example.com",
+        "reg_date": "2022-01-01 00:00:00",
+        "last_visit": "2022-01-02 00:00:00",
+        "is_teacher": true,
+        "is_admin": true
+    },
+    {
+        "login": "admin1",
+        "name": "BPvOTGUQ",
+        "surname": "HKsCdIHpkk",
+        "password": "EXHifELDrv",
+        "email": "user7@example.com",
+        "reg_date": "2022-01-01 00:00:00",
+        "last_visit": "2022-01-02 00:00:00",
+        "is_teacher": true,
+        "is_admin": true
+    }
+]
