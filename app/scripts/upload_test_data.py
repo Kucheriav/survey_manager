@@ -1,21 +1,7 @@
-from db.functions import *
-import json
-
-@database_session
-def get_all_users(session):
-    data = session.query(User).all()
-    return data
 
 
-@database_session
-def get_all_questions(session):
-    data = session.query(Question).all()
-    return data
 
-@database_session
-def get_all_options(session):
-    data = session.query(AnswerOption).all()
-    return data
+###NEED REFACTOR
 
 @database_session
 def add_test_users(session):
@@ -52,22 +38,3 @@ def add_test_questions(session):
             session.add(AnswerOption(text=option, question_id=q_id))
     session.commit()
     # session.close()
-
-
-def primary_db_test():
-    #try to connect and get some data
-    recreate_db()
-    add_test_users()
-    add_test_questions()
-    res = get_all_users()
-    print(*res, sep='\n')
-    print('-' * 100)
-    res = get_all_questions()
-    print(*res, sep='\n')
-    print('-' * 100)
-    res = get_all_options()
-    print(*res, sep='\n')
-
-
-if __name__ == '__main__':
-    primary_db_test()
