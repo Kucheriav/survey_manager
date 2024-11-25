@@ -1,4 +1,6 @@
 sqlalchemy
+asyncpg
 flask
 flask_mail
+flask_login
 pydantic_settings
