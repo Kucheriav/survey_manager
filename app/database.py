@@ -2,10 +2,10 @@ from sqlalchemy.orm import DeclarativeBase, declared_attr, Mapped, mapped_column
 from sqlalchemy.ext.asyncio import AsyncAttrs, async_sessionmaker, create_async_engine
 from sqlalchemy import Integer, func
 from datetime import datetime
-from app.config import settings
+from app.config import config
 
 
-DATABASE_URL = settings.get_db_url()
+DATABASE_URL = config.get_db_url()
 engine = create_async_engine(url=DATABASE_URL)
 async_session_maker = async_sessionmaker(engine, expire_on_commit=False)
 
